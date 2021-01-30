@@ -331,15 +331,14 @@ class Numbers{
                 }else if(placeIM.innerHTML > 0){
                     timeM--;
                     placeIM.innerHTML = contentIM[timeM];
-                }else if(placeIM.innerHTML == 0 && placeIM.innerHTML == 0){
-                    timeH = timeHC;
-                    timeM = timeMC;
-                    placeIM.innerHTML = contentIM[timeM];
-                    placeIH.innerHTML = contentIH[timeH];
                 }
                 if(placeIM.innerHTML == 0 && placeIM.innerHTML == 0){
                     audioPause.load();
                     audioPause.play();
+                    timeH = timeHC;
+                    timeM = timeMC;
+                    placeIM.innerHTML = contentIM[timeM];
+                    placeIH.innerHTML = contentIH[timeH];
                 }
             },60000);
         }
