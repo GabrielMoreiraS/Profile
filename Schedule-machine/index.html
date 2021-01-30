@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Schedule Machine</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <h2>Chronogram</h2>
+                <p class="actual-time" data-actual-time>14:22</p>
+                <p class="actual-date" data-actual-date>1/7/2021</p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="alert-machine-body">
+                <button class="on" data-button-on>On</button>
+                <button class="off" data-button-off>Off</button>
+        
+                <div class="displayer">
+                    <div class="target-time">
+                        <span class="numbers" data-target-hours></span>
+                        <span class="sign" data-sign></span>
+                        <span class="numbers" data-target-minutes></span>
+                        <span class="period" data-target-period></span>
+                    </div>
+
+                    <div class="interval">
+                        <span class="numbers" data-interval-hours></span>
+                        <span class="sign" data-sign></span>
+                        <span class="numbers" data-interval-minutes></span>
+                    </div>
+
+                    <div class="current-time">
+                        <span id="sd" class="numbers" data-current-hours></span>
+                        <span class="sign" data-sign></span>
+                        <span class="numbers" data-current-minutes></span>
+                        <span class="period" data-current-period></span>
+                    </div>
+                </div>
+
+                <div class="selection-area">
+                    <div class="desired-time">
+                        <button data-less-btn-dt-h class="button-left">-</button>
+                        <span class="key-info">Total time hours</span>
+                        <button data-pluss-btn-dt-h class="button-right">+</button>
+                        <div class="clear"></div>
+                        <button data-less-btn-dt-m class="button-left">-</button>
+                        <span class="key-info">Total time minutes</span>
+                        <button data-pluss-btn-dt-m class="button-right">+</button>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="interval">
+                        <button data-less-btn-i-h class="button-left">-</button>
+                        <span class="key-info">Interval time hours</span>
+                        <button data-pluss-btn-i-h class="button-right">+</button>
+                        <div class="clear"></div>
+                        <button data-less-btn-i-m class="button-left">-</button>
+                        <span class="key-info">Interval time minutes</span>
+                        <button data-pluss-btn-i-m class="button-right">+</button>
+                    </div>
+                </div>
+
+                <div class="control-area">
+                    <span><button data-resert-btn class="resert-btn">Resert</button></span>
+                    <span><button data-start-btn class="start-btn">Start</button></span>
+                    <span><button data-stop-btn class="stop-btn">Stop</button></span>
+                </div>
+            </div>
+            <audio id="end" style="display: none" src="Sounds/It's over.mp3"></audio>
+            <audio id="pause" style="display: none"  src="Sounds/interval.mp3"></audio>
+        </div>
+        <script src="JavaScript/js.js" defer></script>
+    </body>
+</html>

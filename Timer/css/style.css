@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{
+	src: url(../fonts/displayFonts/digital-7.ttf);
+	font-family: "displayFont";
+}
+
+@font-face{
+	src: url(../fonts/alarmclock.ttf);
+	font-family: "mainFont";
+}
+
+@font-face{
+	src: url(../fonts/on_Off/Teko-Bold.ttf);
+	font-family: "on_Off";
+}
