@@ -229,7 +229,7 @@ window.onload = function(){
 		messageLink.style.textAlign = "center";
 		messageLink.style.cursor = "pointer";
 		messageLink.style.textDecoration = "none";
-		messageLink.href = "https://github.com/GabrielMoreiraS";
+		messageLink.href = "mailto:gabriel.moreirasilva450@outlook.com";
 		messageLink.target = "blankt"
 		
 		centralizer.style.width = "100%";
