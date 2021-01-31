@@ -3,58 +3,67 @@
     <head>
         <title>Portifólio - Gabriel Moreira</title>
         <meta charset="utf-8"/>
-        <meta name="vieport" content="width=device-width scale=1.0"/>
-        <link rel="stylesheet" href="css.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css.css"/>
     </head>
     <body>
         <div class="container">
             <div class="navigation">
-                <h2>GABRIEL MOREIRA SILVA</h2><a href="mailto:gabriel.moreirasilva450@outlook.com"><i class="fa fa-envelope"></i></a>
+                <h2>GABRIEL MOREIRA SILVA</h2>
+                <p data-button target="personal-information">Personal information</p>
+                <p data-button target="front-end">Front-End</p>
+                <p data-button target="back-end">Back-End</p>
+                <a href="mailto:gabriel.moreirasilva450@outlook.com"><i class="fa fa-envelope"></i></a>
                 <a href="https://github.com/GabrielMoreiraS"><i class="fa fa-github"></i></a>
-                <p data-button id="personal-information">Personal information</p>
-                <p data-button id="address">Adress</p>
-                <p data-button id="front-end">Front-End</p>
-                <p data-button id="back-end">Back-End</p>
-                <p data-button id="server-side">Server side</p>
             </div>
-            <div class="topics-box">
-                <div class="topics" target="personal-information">
-                    <p>Genero: Masculino</p>
-                    <p>Idade: 19 anos.</p>
-                    <p>Data de Nascimento: 21/10/2001</p>
-                    <p>Escolaridade: Tenho o Ensino Médio terminado mas ainda não iniciei o Ensino Superior,
-                    porém já estudo matérias do primeiro período da faculdade de Ciência da Computação, prestado na UFMG, que por sua vez disponibiliza os 
-                    tópicos que são estudados em seu site: <a href="https://ufmg.br/cursos/graduacao/2377/90310">conferir</a>.</p>
-                </div><!--
-                <div class="topics" target="address">
-                    <p>Estado: Minas Gerais</p>
-                    <p>Cidade: Sarzedo</p>
-                    <p>Endereço: Rua Irene Pinheiro de Avelar (centro)</p>
-                    <p>N°: 376</p>
-                </div>
-                <div class="topics" target="front-end">
-                    <p>Meu primeiro projeto JavaScript foi uma espécie de cronômetro que disparava
-                    um alerta quando a contagem era zerada, o projeto foi feito com todo o conhecimento
-                    que tinha e foi bem customizado, pois meu grande foco era fazer algo útil e agradável
-                    visualmente falando.</p>
-                    <span>Conferir o projeto:</span>
-                    <a href="Timer/index.html">Timer</a>
-                    <a href="https://github.com/GabrielMoreiraS/Profile/tree/main/Timer">GitHub<i class="fa fa-github"></i></a><br><br>
-                    <p>Meu segundo projeto foi baseado no primeiro projeto, porém partindo de uma necessidade 
-                    minha de ter alguma aplicação que pudesse me auxiliar nos meus horários, como quando começar e
-                    quando pausar. Este projeto foi uma grande oportunidade de colocar em prática tudo que tinha
-                    aprendido durante meus estudos, neste o capricho e boa aparência não foi o foco, mas sim a 
-                    boa funcionalidade do projeto.</p>
-                    <span>Conferir o projeto:</span>
-                    <a href="Schedule-machine/index.html">Schedule Machine</a>
-                    <a href="https://github.com/GabrielMoreiraS/Profile/tree/main/Schedule-machine">GitHub<i class="fa fa-github"></i></a>
-                </div>
-                <div class="topics" target="back-end">
-                </div>
-                <div class="topics" target="server-side">
-                </div>
-                </div>-->
+            <div class="topics" id="personal-information">
+                <p><b>Genero:</b> Masculino</p>
+                <p><b>Idade:</b> 19 anos</p>
+                <p><b>Data de Nascimento:</b> 21/10/2001</p>
+                <p style="display: inline;"><b>Escolaridade:</b> Tenho o Ensino Médio terminado mas ainda não iniciei o Ensino Superior,
+                porém já estudo matérias do primeiro período da faculdade de Ciência da Computação, oferecido na UFMG, que por sua vez 
+                apresenta os tópicos que são estudados no curso, em seu site:</p>
+                <a href="https://ufmg.br/cursos/graduacao/2377/90310">link</a>.
+                <p><b>Cursos:</b> Pacote FullStack, da empresa Danki Code.</p>
+                <p><b>Estado:</b> Minas Gerais</p>
+                <p><b>Cidade:</b> Sarzedo</p>
+                <p><b>Endereço:</b> Rua Irene Pinheiro de Avelar (centro)</p>
+                <p><b>N°:</b> 376</p>
             </div>
+            <div class="topics" id="front-end">
+                <p><b>Ferramentas:</b> HTML5(SVG,Canvas...), CSS3, JavaScript ES6, Jquery, algumas Google API's(Maps,Charts)
+                e tenho alguns documentos onde utilizei a XML.</p><br>
+                <p><b>Primeiro projeto</b></p>
+                <p>Meu primeiro projeto foi um temporizador, que disparava um alerta quando a contagem era zerada. 
+                O projeto foi feito 98% usando JavaScript ficando assim bem demorado e este era o meu propósito, a pratica, o aprendizado.
+                No final o projeto ficou exatamente do jeito que queria e bastante funcional, consegui praticar bastante e adquiri bastante
+                experiência.</p>
+                <span>Conferir o projeto:</span>
+                <a href="Timer/index.html">Timer</a>,
+                <a href="https://github.com/GabrielMoreiraS/Profile/tree/main/Timer"><i class="fa fa-github"></i>GitHub do projeto</a><br><br>
+                <p><b>Segundo projeto</b></p>
+                <p>Meu segundo projeto foi baseado no primeiro projeto, porém partindo de uma necessidade 
+                minha de ter alguma aplicação que pudesse me auxiliar nos meus horários, como quando começar a estudar e
+                quando dar aquela pausa. Este projeto foi uma grande oportunidade de colocar em prática tudo que tinha
+                aprendido durante meus estudos nos útimos 4 meses de pura dedicação e consistência, neste o capricho e boa aparência não
+                foram o foco, mas sim a boa funcionalidade do projeto e a utilização de Classes em um próprio</p>
+                <span>Conferir o projeto:</span>
+                <a href="Schedule-machine/index.html">Schedule Machine</a>,
+                <a href="https://github.com/GabrielMoreiraS/Profile/tree/main/Schedule-machine"><i class="fa fa-github"></i>GitHub do projeto</a>
+                <br>
+                <i style="display: block;padding-top: 25px">Estes dois projetos foram os quais eu apliquei parte, do que aprendi durante
+                meus estudos utilizando o site<a href="https://www.w3schools.com/">W3Schools</a> e com as aulas do curso Front-end, do 
+                Pacote FullStack da empresa Danki Code.</i>
+            </div>
+            <div class="topics" id="back-end">
+                <p><b>Ferramentas:</b> PHP e SQL</p>
+                <br>
+                <i>Meus conhecimentos em PHP são básicos, tenho apenas um mês de prática com a ferramenta.
+                Partindo para o SQL é ainda pior pois não sei ao menos o básico e preciso começar a entudar do zero.
+                O meu ponto forte no momento é o Front-End por conta das minhas skills, e no Back-End ainda preciso 
+                melhorar bastante.</i>
+            </div>
+        </div>
         <script src="https://kit.fontawesome.com/51ac4e6058.js" crossorigin="anonymous"></script>
         <script src="jq.js"></script>
         <script src="js.js" defer></script>

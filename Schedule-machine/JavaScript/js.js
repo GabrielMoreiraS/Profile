@@ -2,7 +2,7 @@ const visorCharacters = document.querySelectorAll(".numbers, .sign, .period");
 const actualTime = document.querySelector("[data-actual-time]");
 const actualDate = document.querySelector("[data-actual-date]");
 const buttons = document.querySelectorAll(".button-right, .button-left," +
-+ "[data-resert-btn], [data-start-btn], [data-stop-btn]");
+"[data-resert-btn], [data-start-btn], [data-stop-btn]");
 const targetHours = document.querySelector("[data-target-hours]");
 const targetMinutes = document.querySelector("[data-target-minutes]");
 const targetPeriod = document.querySelector("[data-target-period]");

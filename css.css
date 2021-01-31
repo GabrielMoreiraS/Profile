@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial;
 }
 
 html,body{
@@ -11,11 +12,11 @@ html,body{
 
 .container{
     width: 100%;
-    max-width: 1210px;
-    height: 70%;
+    max-width: 1300px;
+    height: 100%;
     margin: 0 auto;
     padding: 5px;
-    
+    background: rgb(179, 177, 177);
 }
 
 .navigation{
@@ -25,33 +26,85 @@ html,body{
     text-decoration: none;
     background-color: rgb(97, 120, 153);
     box-shadow: 4px 3px 11px 2px rgb(49, 49, 49);
-    display: inline-block;
+    float: left;
 }
 
 .navigation h2{
     font-size: 21px;
 }
 
-.navigation > a > i{
-    color: black;
-    font-size: 25px;
-    padding-right: 5px;
+.navigation > p:nth-of-type(1){
+    width: 100%;
+    max-width: 173px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 3px;
+    border: 3px solid black;
+    cursor: pointer;
 }
 
-.topics-box{
-    width: 68%;
-    height: 100%;
-    padding: 15px 1%;
-    float: right;
-    background-color:rgb(173, 177, 177);
-    box-shadow: 4px 3px 11px 2px rgb(49, 49, 49);
+.navigation > p:nth-of-type(2){
+    width: 100%;
+    max-width: 87px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.navigation > p:nth-of-type(3){
+    width: 100%;
+    max-width: 86px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.navigation i{
+    font-size: 29px;
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+.navigation > a {
+    color: black;
+    font-size: 25px;
+    padding-right: -5px;
 }
 
 .topics{
-    width: 100%;
+    width: 60%;
     max-width: 700px;
     padding: 15px 1%;
-    /* display: none; */
+    display: none;
     float: left;
+    margin-top: 15px;
+    margin-left: 50px;
     background-color:  rgb(221, 221, 221);
+}
+
+.topics > p, a, span{
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 727px){
+
+    .navigation{
+        width: 100%;
+        height: 50%;
+        padding: 15px 1%;
+        text-decoration: none;
+        background-color: rgb(97, 120, 153);
+        box-shadow: 4px 3px 11px 2px rgb(49, 49, 49);
+        float: none;
+    }
+    .topics{
+        width: 100%;
+        padding: 15px 1%;
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
