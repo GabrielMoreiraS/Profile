@@ -76,14 +76,27 @@ header > .container-header > .actual-date{
 .container{
     width: 100%;
     max-width: 500px;
-    margin: 25px auto;
-    padding: 30px 2%;
+    margin: 0px auto;
+    padding: 10px 2%;
+}
+
+.chronogram-container{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 35px;
+    overflow-y: hidden;
+    margin: 0 auto;
+    margin-top: 60px;
+    background:rgb(114,113,132);
+    text-align: center;
 }
 
 .alert-machine-body{
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 15px;
     border-radius: 3px;
     border: 2px solid black;
     background: rgb(39, 42, 68);

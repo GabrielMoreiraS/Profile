@@ -1,8 +1,11 @@
+const schedules = document.querySelectorAll(".chronogram-container p");
 const visorCharacters = document.querySelectorAll(".numbers, .sign, .period");
-const actualTime = document.querySelector("[data-actual-time]");
+const actualHours = document.querySelector("[data-actual-h]");
+const actualPeriod = document.querySelector("[data-actual-p]");
+const actualMinutes = document.querySelector("[data-actual-m]");
 const actualDate = document.querySelector("[data-actual-date]");
-const buttons = document.querySelectorAll(".button-right, .button-left," +
-"[data-resert-btn], [data-start-btn], [data-stop-btn]");
+const buttons = document.querySelectorAll(`.button-right, .button-left,
+[data-resert-btn], [data-start-btn], [data-stop-btn]`);
 const targetHours = document.querySelector("[data-target-hours]");
 const targetMinutes = document.querySelector("[data-target-minutes]");
 const targetPeriod = document.querySelector("[data-target-period]");
@@ -35,7 +38,7 @@ body.onload = function(){
 }
 
 var initialize = function(){
-    var machine = new ScheduleMachine;
+    var machine = new ScheduleMachine(currentHours,currentMinutes,currentPeriod);
     var compute = new Numbers(machine.numbersShape.hoursStorageInterval,intervalHours,
     machine.numbersShape.minutesStorage,intervalMinutes,targetHours,targetMinutes);
     var numbersDTH = new Numbers(machine.numbersShape.hoursStorage,targetHours,null,
@@ -47,15 +50,15 @@ var initialize = function(){
     on.addEventListener("click", work);
     off.addEventListener("click", oFFAll); 
     (()=>{
+        var time = new ScheduleMachine(actualHours,actualMinutes,actualPeriod);
         setInterval(()=>{
+            time.currentTime();
             var date = new Date;
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-            actualTime.innerHTML = `${hours} : ${minutes}`; 
             var day = date.getDate();
             var month = date.getMonth();
-            var year = date.getFullYear();
-            actualDate.innerHTML = `${month+1}/${day}/${year}`;       
+            if(day <= 10)day = `0${day}`;
+            if(month <= 10)month = `0${month+1}`;
+            actualDate.innerHTML = `${month}/${day}/${date.getFullYear()}`;       
         },1);
     })();
     function buttonsOn(){
@@ -125,32 +128,35 @@ var initialize = function(){
     var pbDTH = () => {
         numbersDTH.increase();
         numbersDTH.checkPeriod();
-    };
+    }
     var lbDTH = () => {
         numbersDTH.decrease();
         numbersDTH.checkPeriod();
-    };
+    }
     var pbDTM = () => {
         numbersDTM.increase();
-    };
+    }
     var lbDTM = () => {
         numbersDTM.decrease();
-    };
+    }
     var pbIH = () => {
         numbersIH.increase();
-    };  
+    }
     var lbIH = () => {
         numbersIH.decrease();
-    };
+    }
     var pbIM = () => {
         numbersIM.increase();
-    };  
+    }
     var lbIM = () => {
         numbersIM.decrease();
-    };
+    }
 }
 
-const ScheduleMachine = function(){
+const ScheduleMachine = function(h,m,p){
+    this.h = h;
+    this.m = m;
+    this.p = p;
     this.on = function(){
         this.resert();
         this.interval = setInterval(()=>{
@@ -204,22 +210,32 @@ const ScheduleMachine = function(){
         var hoursShaped = this.numbersShape.hoursStorage.length;
         for(var iH = 0; iH < hoursShaped; iH++){
             if(iH == hours){
-                currentHours.innerHTML = this.numbersShape.hoursStorage[iH];
+                this.h.innerHTML = this.numbersShape.hoursStorage[iH];
             }
         }
         var minutes = date.getMinutes();
         var minutesShaped = this.numbersShape.minutesStorage.length;
         for(var iM = 0; iM < minutesShaped; iM++){  
             if(iM == minutes){
-                currentMinutes.innerHTML = this.numbersShape.minutesStorage[iM];
+                this.m.innerHTML = this.numbersShape.minutesStorage[iM];
             }
         }
         if(hours >= 12 && minutes > 0){
-            currentPeriod.innerHTML = "PM";
+            this.p.innerHTML = "PM";
         }else{
-            currentPeriod.innerHTML = "AM";
+            this.p.innerHTML = "AM";
+        }
+        if(this.h != actualHours){
+            schedules.forEach(i =>{
+                var id = i.getAttribute("id");
+                if(id == hours){
+                    var place = document.querySelector(".chronogram-container");
+                    place.scrollTop = (document.getElementById(id).offsetTop - place.offsetTop);
+                }
+            });
         }
     }
+        
     this.default = function(){
         targetHours.innerHTML = "00";
         targetMinutes.innerHTML = "00";
