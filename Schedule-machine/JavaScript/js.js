@@ -195,7 +195,7 @@ const ScheduleMachine = function(h,m,p){
     }
     this.numbersShape = {
         hoursStorage: ["00","01","02","03","04","05","06","07","08","09","10","11",
-        "12","01","02","03","04","05","06","07","08","09","10","11","12"],
+        "12","01","02","03","04","05","06","07","08","09","10","11"],
         hoursStorageInterval: ["00","01","02","03","04","05","06","07","08","09",
         "10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"],
         minutesStorage: ["00","01","02","03","04","05","06","07","08","09","10","11",
@@ -228,7 +228,7 @@ const ScheduleMachine = function(h,m,p){
         if(this.h != actualHours){
             schedules.forEach(i =>{
                 var id = i.getAttribute("id");
-                if(id == hours){
+                if(id <= hours){
                     var place = document.querySelector(".chronogram-container");
                     place.scrollTop = (document.getElementById(id).offsetTop - place.offsetTop);
                 }
