@@ -56,8 +56,8 @@ var initialize = function(){
             var date = new Date;
             var day = date.getDate();
             var month = date.getMonth();
-            if(day <= 10)day = `0${day}`;
-            if(month <= 10)month = `0${month+1}`;
+            if(day < 10)day = `0${day}`;
+            if(month < 10)month = `0${month+1}`;
             actualDate.innerHTML = `${month}/${day}/${date.getFullYear()}`;       
         },1);
     })();
