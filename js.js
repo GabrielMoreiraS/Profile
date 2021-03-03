@@ -18,3 +18,4 @@ $('[data-button]').each(function(i){
             $('[data-button]').eq(i).css("border","none");
     });
 });
+//Jquery is insane \o/!
