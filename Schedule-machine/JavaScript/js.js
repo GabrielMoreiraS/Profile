@@ -289,6 +289,7 @@ class Numbers{
     checkPeriod(){
         if(this.i < 12){
             targetPeriod.innerHTML = "AM";
+            
         }else if(this.i >= 12){
             targetPeriod.innerHTML = "PM";
         }
