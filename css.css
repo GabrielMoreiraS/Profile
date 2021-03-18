@@ -131,20 +131,3 @@ html,body{
         background: rgb(179, 177, 177);
     }
 }
-
-@media screen and (max-width: 400px){
-    .navigation > p:nth-of-type(1){
-        max-width: 160px;
-        font-size: 15px;
-    }
-    
-    .navigation > p:nth-of-type(2){
-        max-width: 80px;
-        font-size: 15px;
-    }
-    
-    .navigation > p:nth-of-type(3){
-        max-width: 80px;
-        font-size: 15px;
-    }
-}
