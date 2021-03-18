@@ -132,11 +132,11 @@ html,body{
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 400px){
     .navigation > p:nth-of-type(1){
         width: 100%;
         max-width: 210px;
-        font-size: 18px;
+        font-size: 14px;
         margin-top: 3px;
         border: 3px solid black;
         cursor: pointer;
