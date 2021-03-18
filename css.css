@@ -131,3 +131,14 @@ html,body{
         background: rgb(179, 177, 177);
     }
 }
+
+@media screen and (max-width: 400px){
+    .navigation > p:nth-of-type(1){
+        width: 100%;
+        max-width: 200px;
+        font-size: 18px;
+        margin-top: 3px;
+        border: 3px solid black;
+        cursor: pointer;
+    }
+}
