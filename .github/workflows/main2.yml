@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gabriel Moreira</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <h2>GABRIEL MOREIRA</h2>
+                <p data-button target="personal-information">Informações Principais</p>
+                <p data-button target="front-end">Front-End</p>
+                <p data-button target="back-end">Back-End</p>
+                <a title="Email" href="mailto:gabriel.moreirasilva450@outlook.com"><i class="fa fa-envelope"></i></a>
+                <a title="GitHub" href="https://github.com/GabrielMoreiraS"><i class="fa fa-github"></i></a>
+                <div class='bottom'>
+                    Criado por: <a href="https://github.com/GabrielMoreiraS" style='color:rgb(179, 177, 177, 0.5)'>Gabriel Moreira</a>.
+                </div>
+            </div>
+            <div style="display: block;" class="topics" id="personal-information">
+                <p><b>Nome Completo:</b> Gabriel Moreira Silva;</p>
+                <p><b>Sexo:</b> Masculino;</p>
+                <p><b>Idade:</b> 19 anos;</p>
+                <p><b>Data de Nascimento:</b> 21/10/2001;</p>
+                <p><b>Objetivos:</b> Estou à procura de emprego, seja braçal ou desenvolvimento web. Pois um salário ajudaria bastante no meu caminho para me formar um profissional em, desenvolvimento
+                de software e desenvolvimento web, em uma instituição pública ou privada.</p><br>
+                <p style="display: inline;"><b>Escolaridade:</b> Tenho o Ensino Médio terminado e meu próximo objetivo 
+                é entrar na faculdade de Ciências da Computação.</p>
+                <p><b>Cursos:</b> Web Designer, da empresa Micronet(terminado em 2015). Descrição: Pacote office, Corel Draw e Photoshop.<br>
+                Pacote FullStack da empresa Danki Code(em andamento). Descrição: Desenvolvimento web(front end, back end), entre outros.</p><br>
+                <p><b>Estado:</b> Minas Gerais;</p>
+                <p><b>Cidade:</b> Sarzedo;</p>
+                <p><b>Endereço:</b> Rua Irene Pinheiro de Avelar (centro) n°376 (casa).</p>
+            </div>
+            <div class="topics" id="front-end">
+                <p><b>Ferramentas:</b> HTML5(SVG,Canvas...), CSS3, JavaScript ES6, Jquery, algumas Google API's(Maps,Charts)
+                e XML.</p><br>
+                <p><b>Primeiro projeto</b></p>
+                <p>Meu primeiro projeto foi um temporizador, que disparava um alerta quando a contagem era zerada. 
+                O projeto foi feito 98% usando JavaScript ficando assim bem demorado e este era o meu propósito, a pratica, o aprendizado.
+                No final o projeto ficou exatamente do jeito que queria e bastante funcional, consegui praticar bastante e adquiri bastante
+                experiência.</p>
+                <span>Conferir o projeto:</span>
+                <a href="Timer/index.html">Timer</a>,
+                <a href="https://github.com/GabrielMoreiraS/Profile/tree/main/Timer"><i class="fa fa-github"></i>GitHub do projeto</a><br><br>
+                <p><b>Segundo projeto</b></p>
+                <p>Meu segundo projeto foi baseado no primeiro projeto, porém partindo de uma necessidade 
+                minha de ter alguma aplicação que pudesse me auxiliar nos meus horários, como quando começar a estudar e
+                quando dar aquela pausa. Este projeto foi uma grande oportunidade de colocar em prática tudo que tinha
+                aprendido durante meus estudos nos útimos 4 meses de pura dedicação e consistência, neste o capricho e boa aparência não
+                foram o foco, mas sim a boa funcionalidade e utilidade do projeto.</p>
+                <span>Conferir o projeto:</span>
+                <a href="Schedule-machine/index.html">Schedule Machine</a>,
+                <a href="https://github.com/GabrielMoreiraS/Profile/tree/main/Schedule-machine"><i class="fa fa-github"></i>GitHub do projeto</a>
+                <br>
+                <i style="display: block;padding-top: 25px">Estes dois projetos foram os quais apliquei parte, do que aprendi durante
+                meus estudos utilizando o site <a href="https://www.w3schools.com/">W3Schools</a> e com as aulas do curso Front-end, do 
+                Pacote FullStack da empresa Danki Code. Foram desenvolvidas também algumas landing pages e algumas funcionalidades utilizando Jquery,
+                até o momento que estou no curso com 40% do mesmo concluido.</i>
+            </div>
+            <div class="topics" id="back-end">
+                <p><b>Ferramentas:</b> PHP e SQL.</p>
+                <br>
+                <i>Tenho um conhecimento básico da ferramenta PHP, entendo seus conceitos,
+                sei utilizar o básico da ferramenta e é bem rápido para poder aprender coisas novas em PHP.
+                Se tratando de servidor SQL, tenho um determinado conhecido e
+                uma boa prática pois já sou capaz de criar e, alterar bancos de dados, embora
+                o back end não ser o meu ponto forte.</i>
+                <p>Resumindo é muito rápido aprender a utilizar ferramentas, se necessário, podem contar comigo.</p>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/51ac4e6058.js" crossorigin="anonymous"></script>
+        <script src="jq.js"></script>
+        <script src="js.js" defer></script>
+    </body>
+</html>
